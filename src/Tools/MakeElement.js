@@ -14,7 +14,7 @@
 
 */
 
- 
+  
 function MakeElement(){     
   this.createEle = function(type,name,gridsize,custom) {
     let newElement = document.createElement(type); 
