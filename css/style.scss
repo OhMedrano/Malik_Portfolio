@@ -1,1 +1,149 @@
- 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F6F7;
+  color: #363636
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+}
+
+/************************
+Banner
+************************/
+.banner {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  background: #3498DB;
+  width: 100%;
+  padding: 20px;
+}
+
+/************************
+Navigation
+************************/
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #363636;
+  padding: 5px;
+  font-size: 125%;
+}
+
+nav li a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 20px;
+  padding: 8px 16px;
+}
+
+nav li a:hover {
+  color: #3498DB;
+  text-decoration: none;
+}
+
+.action {
+  display: block;
+  height: 70px;
+  width: 500px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 150%;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #3498DB;
+  color: #FFF;
+}
+
+.action:hover {
+  background-color: #363636;
+  color: #FFF;
+  text-decoration: none;
+}
+
+/************************
+About
+************************/
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+/************************
+Projects
+************************/
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+/************************
+Contact Form
+************************/
+form {
+  color: #FFF;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  color: #363636;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #363636;
+  color: #FFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFF;
+  color: #363636;
+  border-radius: 20px;
+}
+
+.contact {
+  border-radius: 30px;
+  background-color: #3498DB;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background-color: #363636;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+}
