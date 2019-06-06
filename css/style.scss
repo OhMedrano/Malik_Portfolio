@@ -35,6 +35,19 @@ Banner
   background: $themecolor;
   width: 100%;
   padding: 20px;
+
+  @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
+    background: green;
+  }
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+    background: yellow;
+  }
+
+  @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
+    background: red;
+  }
+
 }
 
 /************************
@@ -70,7 +83,7 @@ nav {
 .action {
   display: block;
   height: 70px;
-  width: 500px;
+  width: 100%;
   text-align: center;
   line-height: 70px;
   font-size: 150%;
