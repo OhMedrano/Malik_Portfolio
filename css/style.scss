@@ -78,12 +78,12 @@ nav {
   text-decoration: none;
   background-color: $themecolor;
   color: $textcolor2;
-}
 
-.action:hover {
-  background-color: $blkcolor;
-  color: $textcolor2;
-  text-decoration: none;
+  :hover {
+    background-color: $blkcolor;
+    color: $textcolor2;
+    text-decoration: none;
+  }
 }
 
 /************************
