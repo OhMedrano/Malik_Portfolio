@@ -2,10 +2,19 @@
   box-sizing: border-box;
 }
 
+/************************
+Site Colors
+************************/
+$bgcolor: #F4F6F7;
+$blkcolor: #363636;
+$textcolor2: #FFF;
+$themecolor: #3498DB;
+
 body {
-  background-color: #F4F6F7;
-  color: #363636
+  background-color: $bgcolor;
+  color: $blkcolor;
 }
+
 
 #wrapper {
   display: flex;
@@ -22,8 +31,8 @@ Banner
 .banner {
   display: flex;
   flex-direction: column;
-  color: #FFF;
-  background: #3498DB;
+  color: $textcolor2;
+  background: $themecolor;
   width: 100%;
   padding: 20px;
 }
@@ -37,25 +46,25 @@ Navigation
   width: 100%;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  background-color: #363636;
-  padding: 5px;
-  font-size: 125%;
-}
-
-nav li a {
-  color: #FFF;
-  text-decoration: none;
-  margin: 20px;
-  padding: 8px 16px;
-}
-
-nav li a:hover {
-  color: #3498DB;
-  text-decoration: none;
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: $blkcolor;
+    padding: 5px;
+    font-size: 125%;
+  }
+  a {
+    color: $textcolor2;
+    text-decoration: none;
+    margin: 20px;
+    padding: 8px 16px;
+  }
+  :hover {
+    color: $themecolor;
+    text-decoration: none;
+  }
 }
 
 .action {
@@ -67,14 +76,14 @@ nav li a:hover {
   font-size: 150%;
   border-radius: 30px;
   text-decoration: none;
-  background-color: #3498DB;
-  color: #FFF;
-}
+  background-color: $themecolor;
+  color: $textcolor2;
 
-.action:hover {
-  background-color: #363636;
-  color: #FFF;
-  text-decoration: none;
+  :hover {
+    background-color: $blkcolor;
+    color: $textcolor2;
+    text-decoration: none;
+  }
 }
 
 /************************
@@ -101,13 +110,13 @@ Projects
 Contact Form
 ************************/
 form {
-  color: #FFF;
+  color: $textcolor2;
 }
 
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
-  color: #363636;
+  color: $blkcolor;
   border: 1px solid #ccc;
   border-radius: 20px;
   margin-top: 6px;
@@ -116,8 +125,8 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #363636;
-  color: #FFF;
+  background-color: $blkcolor;
+  color: $textcolor2;
   padding: 12px 20px;
   border: none;
   border-radius: 20px;
@@ -125,14 +134,14 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #FFF;
-  color: #363636;
+  background-color: $textcolor2;
+  color: $blkcolor;
   border-radius: 20px;
 }
 
 .contact {
   border-radius: 30px;
-  background-color: #3498DB;
+  background-color: $themecolor;
   padding: 20px;
 }
 
@@ -141,8 +150,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FFF;
-  background-color: #363636;
+  color: $textcolor2;
+  background-color: $blkcolor;
   width: 100%;
   margin-top: 5px;
   padding: 10px;
