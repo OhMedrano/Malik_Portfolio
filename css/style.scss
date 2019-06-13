@@ -17,6 +17,7 @@ body {
 
 
 #wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -156,6 +157,12 @@ input[type=submit]:hover {
   border-radius: 30px;
   background-color: $themecolor;
   padding: 20px;
+  width: 100%;
+
+  @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
+    background: green;
+  }
+
 }
 
 footer {
