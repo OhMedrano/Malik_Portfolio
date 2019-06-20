@@ -17,12 +17,12 @@ body {
 
 
 #wrapper {
-  position: relative;
+  /*position: relative;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /***align-items: center;**/
+  /*justify-content: center*/
   font-family: 'Muli', sans-serif;
 }
 
@@ -160,7 +160,11 @@ input[type=submit]:hover {
   width: 100%;
 
   @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
-    background: green;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 520px;
+
   }
 
 }
@@ -175,4 +179,5 @@ footer {
   width: 100%;
   margin-top: 5px;
   padding: 10px;
+  clear: both;
 }
