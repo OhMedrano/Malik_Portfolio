@@ -17,11 +17,12 @@ body {
 
 
 #wrapper {
+  /*position: relative;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /***align-items: center;**/
+  /*justify-content: center*/
   font-family: 'Muli', sans-serif;
 }
 
@@ -35,6 +36,19 @@ Banner
   background: $themecolor;
   width: 100%;
   padding: 20px;
+
+  @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
+    background: green;
+  }
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+    background: yellow;
+  }
+
+  @media all and (min-width: 1080px) { // will trigger when you get to desktop sizes.
+    background: red;
+  }
+
 }
 
 /************************
@@ -65,16 +79,24 @@ nav {
     color: $themecolor;
     text-decoration: none;
   }
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+
+  }
 }
 
-.action {
-  display: block;
-  height: 70px;
-  width: 500px;
+/************************
+Action Button
+************************/
+
+.action, .action a {
+  display: flex;
+  align-self: center;
+  width: 95%;
+  justify-content: center;
   text-align: center;
   line-height: 70px;
   font-size: 150%;
-  border-radius: 30px;
+  border-radius: 5px;
   text-decoration: none;
   background-color: $themecolor;
   color: $textcolor2;
@@ -83,7 +105,28 @@ nav {
     background-color: $blkcolor;
     color: $textcolor2;
     text-decoration: none;
+    width: 100%;
   }
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+    background: $blkcolor;
+    font-size: 125%;
+    width: 200px; /* THIS IS WHERE I'M TRYING TO MODIFY THE WIDTH */
+
+    :hover {
+      background-color: $textcolor2;
+      color: $blkcolor;
+    }
+
+  }
+
+  @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
+    display: flex;
+    width: 490px; /* THIS IS WHERE THE ORIGINAL CHANGE IS*/
+    border-radius: 5px;
+    align-self: center;
+  }
+
 }
 
 /************************
@@ -94,6 +137,9 @@ About
   flex-direction: column;
   width: 100%;
   padding: 20px;
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+  }
 }
 
 /************************
@@ -118,7 +164,7 @@ input[type=text], input[type=email], select, textarea {
   padding: 12px;
   color: $blkcolor;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -129,7 +175,7 @@ input[type=submit] {
   color: $textcolor2;
   padding: 12px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -140,9 +186,28 @@ input[type=submit]:hover {
 }
 
 .contact {
-  border-radius: 30px;
+  display: flex;
+  align-self: center;
+  border-radius: 5px;
   background-color: $themecolor;
   padding: 20px;
+  width: 95%;
+
+  @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 520px;
+    margin-right: 2%;
+
+  }
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+    background: $themecolor;
+    width: 520px;
+    margin-right: 2%;
+  }
+
 }
 
 footer {
@@ -155,4 +220,5 @@ footer {
   width: 100%;
   margin-top: 5px;
   padding: 10px;
+  clear: both;
 }
