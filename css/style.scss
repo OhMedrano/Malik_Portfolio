@@ -79,6 +79,9 @@ nav {
     color: $themecolor;
     text-decoration: none;
   }
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+
+  }
 }
 
 /************************
@@ -105,12 +108,25 @@ Action Button
     width: 100%;
   }
 
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+    background: $blkcolor;
+    font-size: 125%;
+    width: 200px; /* THIS IS WHERE I'M TRYING TO MODIFY THE WIDTH */
+
+    :hover {
+      background-color: $textcolor2;
+      color: $blkcolor;
+    }
+
+  }
+
   @media all and (min-width: 520px) { // Will trigger when you get to Tablet sizes
     display: flex;
-    width: 490px;
+    width: 490px; /* THIS IS WHERE THE ORIGINAL CHANGE IS*/
     border-radius: 5px;
     align-self: center;
   }
+
 }
 
 /************************
@@ -121,6 +137,9 @@ About
   flex-direction: column;
   width: 100%;
   padding: 20px;
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+  }
 }
 
 /************************
@@ -179,7 +198,14 @@ input[type=submit]:hover {
     flex-direction: column;
     align-self: flex-end;
     width: 520px;
+    margin-right: 2%;
 
+  }
+
+  @media all and (min-width: 900px) { // Will trigger when you get to Laptop sizes
+    background: $themecolor;
+    width: 520px;
+    margin-right: 2%;
   }
 
 }
